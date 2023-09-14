@@ -15,5 +15,139 @@
     /* Font */
     --Red-hat-display: 'Red Hat Display', sans-serif;
 
-};
+}
 
+body{
+    height: 100vh;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Pale-blue);
+    font-family: var(--Red-hat-display);
+    font-size: 15px;
+    
+}
+
+.component {
+    background-color: white;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.component__image{
+    width: 40vh;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+/* Content */
+.content__block-text{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.block__title{
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--Dark-blue);
+    margin-bottom: 20px;
+}
+
+.block__text{
+    color: var(--Desaturated-blue);
+    line-height: 25px;
+    padding: 0 15px;
+}
+
+/* Plan */
+.plan__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    padding: 15px;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+.plan__annual{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.plan__images{
+    margin: 0px 15px 0px 0px;
+}
+
+
+.annual__plan{
+    font-weight: 700;
+}
+
+.annual__value{
+    color: var(--Desaturated-blue);
+    margin-top: 8px;
+}
+
+/* button */
+
+.button__block{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px 0px;
+}
+
+button{ 
+    border-style: none;
+}
+
+.button__payment{
+    background-color: var(--Bright-blue);
+    border-radius: 10px;
+    color: white;
+    font-weight: 900;
+    padding: 15px 0;
+    box-shadow: 0px 20px 20px var(--Very-pale-blue);
+}
+
+.button__cancel{
+    margin-top: 25px;
+    background-color: white;
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+@media screen and (min-width:400px){
+    .component{
+        width: 45vh;
+    }
+
+    .component__image{
+        width: 45vh;
+    }
+
+    .plan__link:hover{
+        text-decoration: none;
+        opacity: 0.6;
+        
+    }
+
+    .button__payment:hover{
+        opacity: 0.6;
+    }
+
+    .button__cancel:hover{
+        color: var(--Dark-blue);
+    }
+}
