@@ -35,7 +35,7 @@ body{
 }
 
 .component__image{
-    width: 40vh;
+    width: inherit;
     border-radius: 10px 10px 0 0 ;
 }
 
