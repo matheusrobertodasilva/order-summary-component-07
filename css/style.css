@@ -29,6 +29,7 @@ body{
 }
 
 .component {
+    width: 30vh;
     background-color: white;
     margin: 30px;
     border-radius: 15px;
